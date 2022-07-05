@@ -7,8 +7,7 @@ cellchat_directory = '/Users/axelalmet/Documents/scRNASeqAnalysisAndModelling/Ce
 giotto_directory = '/Users/axelalmet/Documents/CellCellCommunication/Data/Chen2020/'
 
 # Load the scanpy object 
-adata_chen = sc.read(data_directory + 'chen20_merged.h5ad')
-adata_chen = adata_chen[adata_chen.obs['Group'].isin(['WT_03', 'AD_03'])]
+adata_chen = sc.read(data_directory + 'chen20_3months.h5ad')
 
 # Import the cellchat dataframes
 cellchat_chen_wt = pd.read_csv(cellchat_directory + 'chen20_communications_WT_03.csv')
@@ -82,4 +81,5 @@ cfs.tl.validate_against_base_network(adata_chen,
                             control_label='WT_03',
                             causal_network_label='causal_networks',
                             celltype_ligands_label='X_celltype_ligand',
-                            base_network_label='base_networks')
+                            base_network_label='base_networks',
+                            feasible_pairs=feasible_pairs_chen)

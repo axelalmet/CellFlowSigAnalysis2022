@@ -106,4 +106,7 @@ cfs.tl.validate_against_base_network(adata_marshall,
                             control_label='WT',
                             causal_network_label='causal_networks',
                             celltype_ligands_label='X_celltype_ligand',
-                            base_network_label='base_networks')
+                            base_network_label='base_networks',
+                            feasible_pairs=feasible_pairs_marshall,
+                            celltype_sep_old='_',
+                            celltype_sep_new='-')
