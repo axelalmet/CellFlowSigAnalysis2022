@@ -32,7 +32,7 @@ cfs.pp.construct_base_networks(adata_burkhardt,
                                 base_network_label='base_networks')
 
 # Construct the cell type ligand expression
-cfs.pp.construct_celltype_ligand_expression(adata_burkhardt,
+cfs.pp.construct_celltype_ligand_expressions(adata_burkhardt,
                                             celltype_label='Type',
                                             node_sep='_',
                                             expressions_label='X_celltype_ligand',

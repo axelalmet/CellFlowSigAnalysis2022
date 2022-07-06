@@ -79,7 +79,7 @@ cfs.pp.construct_base_networks(adata_marshall,
                                 base_network_label='base_networks')
 
 # Construct the cell type ligand expression
-cfs.pp.construct_celltype_ligand_expression(adata_marshall,
+cfs.pp.construct_celltype_ligand_expressions(adata_marshall,
                                             celltype_label='cell_type',
                                             celltype_sep_old='_',
                                             celltype_sep_new='-',

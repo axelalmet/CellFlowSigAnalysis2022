@@ -56,7 +56,7 @@ cfs.pp.construct_base_networks(adata_chen,
                                 base_network_label='base_networks')
 
 # Construct the cell type ligand expression
-cfs.pp.construct_celltype_ligand_expression(adata_chen,
+cfs.pp.construct_celltype_ligand_expressions(adata_chen,
                                             celltype_label='AT',
                                             node_sep='_',
                                             expressions_label='X_celltype_ligand',

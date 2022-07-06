@@ -34,7 +34,7 @@ cfs.pp.construct_base_networks(adata_kang,
                                 base_network_label='base_networks')
 
 # Construct the cell type ligand expression
-cfs.pp.construct_celltype_ligand_expression(adata_kang,
+cfs.pp.construct_celltype_ligand_expressions(adata_kang,
                                             celltype_label='cell_type',
                                             celltype_sep_old=' ',
                                             celltype_sep_new='-', 

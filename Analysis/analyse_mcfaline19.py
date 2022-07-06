@@ -34,7 +34,7 @@ cfs.pp.construct_base_networks(adata_mcfaline,
                                 base_network_label='base_networks')
 
 # Construct the cell type ligand expression
-cfs.pp.construct_celltype_ligand_expression(adata_mcfaline,
+cfs.pp.construct_celltype_ligand_expressions(adata_mcfaline,
                                             celltype_label='leiden',
                                             celltype_sep_old=' ',
                                             celltype_sep_new='-',
