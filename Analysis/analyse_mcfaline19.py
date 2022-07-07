@@ -7,7 +7,6 @@ cellchat_directory = '/Users/axelalmet/Documents/scRNASeqAnalysisAndModelling/Ce
 # Load teh 
 adata_mcfaline = sc.read(data_directory + 'mcfaline19_merged.h5ad')
 
-
 # Import the cellchat dataframes
 cellchat_mcfaline_inner = pd.read_csv(cellchat_directory + 'mcfaline19_communications_inner.csv')
 cellchat_mcfaline_outer = pd.read_csv(cellchat_directory + 'mcfaline19_communications_outer.csv')
@@ -58,7 +57,8 @@ cfs.tl.learn_causal_network(adata_mcfaline,
 # Validate causal network against base network
 cfs.tl.validate_against_base_network(adata_mcfaline,
                             condition_label='spatial_id',
-                            control_label='inner',
                             causal_network_label='causal_networks',
                             celltype_ligands_label='X_celltype_ligand',
-                            base_network_label='base_networks')
+                            base_network_label='base_networks',
+                            celltype_sep_old=' ',
+                            celltype_sep_new='-',)

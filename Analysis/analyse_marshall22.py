@@ -103,7 +103,6 @@ cfs.tl.learn_causal_network(adata_marshall,
 # Validate causal network against base network
 cfs.tl.validate_against_base_network(adata_marshall,
                             condition_label='sample',
-                            control_label='WT',
                             causal_network_label='causal_networks',
                             celltype_ligands_label='X_celltype_ligand',
                             base_network_label='base_networks',

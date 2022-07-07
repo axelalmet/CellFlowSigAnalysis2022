@@ -56,7 +56,6 @@ cfs.tl.learn_causal_network(adata_liao,
 # Validate causal network against base network
 cfs.tl.validate_against_base_network(adata_liao,
                             condition_label='Condition',
-                            control_label='HC',
                             causal_network_label='causal_networks',
                             celltype_ligands_label='X_celltype_ligand',
                             base_network_label='base_networks')
